@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "8d218416-e9f8-473c-bf76-c57a599ed8fe",
+		"name": "Detik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9847322"
+	},
+	"item": [
+		{
+			"name": "Check status tiket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "event_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ticket_code",
+							"value": "IIM6VHB8DM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/ticket/check",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ticket",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ubah status tiket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "event_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ticket_code",
+							"value": "IIM6VHB8DM",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "claimed",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/ticket/claim",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ticket",
+						"claim"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
