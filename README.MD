@@ -1,5 +1,5 @@
 #How To Setup<br/>
-1. Siapkan database dengan cara import / restore ke database administration tool<br/>
+1. Siapkan database dengan cara import / restore menggunakan database administration tool. Database yang digunakan adalah mySQL<br/>
 2. Check file connection php, sesuaikan $databaseUsername dan $databasePassword dengan akses database Anda<br/>
 3. Contoh API ada di file Detik.postman_collection.json, silahkan import di POSTMAN<br/><br/><br/>
 
